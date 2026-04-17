@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 const frontendDir = path.join(__dirname, "..", "frontend");
 
 app.get("/", (_req, res) => {
-  res.send("Hello GitOps vichu");
+  res.send("Hello GitOps");
 });
 
 app.get("/healthz", (_req, res) => {
