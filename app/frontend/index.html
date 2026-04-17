@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitOps App</title>
+    <link rel="stylesheet" href="/ui/styles.css" />
+    <script src="/ui/app.js" defer></script>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="card">
+        <p class="eyebrow">GitOps Demo</p>
+        <h1>GitOps App Running</h1>
+        <p class="copy">
+          This frontend is served by the Express backend that Argo CD keeps in
+          sync from Git.
+        </p>
+
+        <div class="status-grid">
+          <div class="status-item">
+            <span class="label">API root</span>
+            <code id="api-root">Loading...</code>
+          </div>
+          <div class="status-item">
+            <span class="label">Health</span>
+            <code id="health-status">Loading...</code>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
